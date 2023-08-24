@@ -1,0 +1,23 @@
+{
+  "name": "formentryobjectpagetest",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.108.12",
+    "cds-plugin-ui5": "^0.1.4"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-testapp": "cds watch --open testapp/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/testapp"
+  ]
+}

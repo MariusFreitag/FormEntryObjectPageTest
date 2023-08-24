@@ -1,0 +1,8 @@
+specVersion: "2.6"
+metadata:
+  name: testapp
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
