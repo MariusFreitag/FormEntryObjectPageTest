@@ -84,7 +84,6 @@
       "css": []
     },
     "routing": {
-      "config": {},
       "routes": [
         {
           "pattern": "RootEntity({key}):?query:",
@@ -108,6 +107,15 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.fe.templates.ObjectPage.ObjectPageController": {
+            "controllerName": "testapp.ext.controller.FormEntryObjectPage"
           }
         }
       }
